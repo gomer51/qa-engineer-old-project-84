@@ -1,85 +1,103 @@
 ---
 - summary: |
-    Нет возможности зарегестрировать свой профиль
-environment: |
-    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
-    ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
-    1. Перейти по ссылке https://hexlet-products-store.vercel.app/
-    2. В графе регистрации учетной записи нажать на кномку "регистрация"
-    3. Создать учетную запись.
-expected-result: |
-    Переход на страницу регистрации и создания учетной записи
-actual-result: |
-    Перейдя по ссылке, нет графы регистрации.
-       
+    Не работает поиск товаров по ключевому слову
+  environment: >
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
+    2. В поиске ввести "смартфон", "ноутбук", "туалетная вода", "кроссовки".
+  expected-result: |
+    На странице должны отображаться товары интернет магазина
+  actual-result: >
+    1. Товары не отображаются 
+    
+    
 - summary: |
-    Не работает каталог товара в магазине
-environment: |
-    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
-    ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
-    1. Перейти по ссылке https://hexlet-products-store.vercel.app/
-    2. Нажать на кнопку "Category"
-    3. Выбрать категорию "Laptop"
-    4. Выбрать бренд "Apple"
-expected-result: |
-    Переходя по ссылке, нажимаем на кнопку "Category","Laptop","Apple", на главном экране будет выведен результат фильтрации магазина.
-actual-result: |
-     получаем на главном экране "Nothing found!"
-     
-- summary: |
-    Нет кнопки оплаты товара в корзине
-environment: |
-    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
-    ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
-    1. Перейти по ссылке https://hexlet-products-store.vercel.app/
-    2. Добавить товар в корзину
-    3. Перейти в корзину нажав на кнопку "Cart"
-expected-result: |
-    После добавления товара, переходим в корзину, нажимаем на кнопку "Оплатить"
-actual-result: |
-    Перейдя в корзину, нет кнопки "Оплатить"
-
-- summary: |
-    Нажимая на товар, фото товара нельзя пролистать кликая на него.
-environment: |
-    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
-    ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
-    1. Перейти по ссылке https://hexlet-products-store.vercel.app/
-    2. Кликнуть на товар
-    3. Представлены разные фото товара
-expected-result: >
-    Кликая на товар, представлены разные фото товара, кликая на них
-    они должны перелистываться
-actual-result: |
-    кликая на товар , ничего не происходит, картинки не листаются
-      
+    Не работает поиск товаров по производителю.
+  environment: >
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
+    2. В поиске ввести по очереди брэнды: Apple, Samsung, OPPO, Huawei, APPle, Microsoft Surface, Infinix, HP Pavilion, Impression of Acqua Di Gio, Royal_Mirage
+  expected-result: |
+    На странице должны отображаться товары интернет магазина
+  actual-result: >
+    1. Не все товары отображаются 
+    2. Список неотображаемых товаров: Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
+    Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
+    LED Lights, luxury palace,  Golden
+    
 - summary: |
     Не работает поиск по цвету и размеру.
-environment: >
+  environment: >
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
+  steps-to-reproduce: |
     Зайти на страницу логина https://hexlet-products-store.vercel.app
-expected-result: |
+  expected-result: |
     На странице должен отображаться поиск товаров цвету и размеру.
-actual-result: |
+  actual-result: |
     Поиск по цвету и размеру на странице отсутсвует.
     
 - summary: |
-    Не работает проверка смены языков.
-environment: >
+    Не работает фильтрация обычных цен.
+  environment: >
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-steps-to-reproduce: |
+  steps-to-reproduce: |
+    1. Ввести в поле поиск по цене от 549 до 549,
+    2. Ввести в поле от 899 до 900,
+    3. Ввести в поле от 1249 до 2000.
+  expected-result: |
+    Отобразится список товаров в заданных диапазонах
+  actual-result: 
+    Отображается пустая страница
+
+
+- summary: |
+    Не работает хештег перехода в категорию.
+  environment: >
+    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
+    ОС Windows 11 Pro Весрия 22H2
+  steps-to-reproduce: |
+    1. В каталоге перейти в описание "iPhone 9" и нажать ссылку # smartphones.
+    2. В каталоге перейти в описание "MacBook Pro" и нажать ссылку # laptops.
+    3. В каталоге перейти в описание "Eau De Perfume Spray" и нажать ссылку # fragrances.
+  expected-result: |
+    Отобразится список товаров, имеющий отошение к данной категории.
+  actual-result: 
+    При переходе по ссылке, ничего не происходит.
+
+
+- summary: |
+    Не работаетп проверка возможности просматривать подробную информацию о товаре.
+  environment: >
+    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
+    ОС Windows 11 Pro Весрия 22H2
+  steps-to-reproduce: |
+    1. Открыть  https://hexlet-products-store.vercel.app
+    2. Выбрать товары:  iPhone 9, iPhone X, Samsung Universe 9
+    3. Кликнуть на фотографии расположенные ниже основного фото товара
+  expected-result: |
+    Пользователь должен увидеть увеличенное фото и описание товара.
+  actual-result: 
+    1. Не отображается описание товара и его характеристики
+    2. Не раскрываются дополнительные фотографии товара.
+  
+  
+- summary: |
+    Не работает проверка смены языков.
+  environment: >
+    Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
+    ОС Windows 11 Pro Весрия 22H2
+  steps-to-reproduce: |
     1. Нажать в шапке меню Accordeon "Language"
     2. Выбрать "Russian"
     3. Перейти на главную страницу и выбрать любой товар
     4. Перейти в корзину  
-expected-result: |
+  expected-result: |
     Пользователь должен увидеть перевод всех наиболее важных кнопок на руский язык а также описание товара # если оно имеется
-actual-result: >
-     1. Описание товара не перевелось на русский язык 
+  actual-result: >
+     1. Описание товара не перевелось на русский язык    
