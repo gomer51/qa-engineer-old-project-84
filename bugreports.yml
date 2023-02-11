@@ -28,7 +28,8 @@
     2. Список неотображаемых товаров: Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
     Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
     LED Lights, luxury palace,  Golden
-    
+ 
+ 
 - summary: |
     Не работает поиск по цвету и размеру.
   environment: >
@@ -40,7 +41,8 @@
     На странице должен отображаться поиск товаров цвету и размеру.
   actual-result: |
     Поиск по цвету и размеру на странице отсутсвует.
-    
+  
+  
 - summary: |
     Не работает фильтрация обычных цен.
   environment: >
@@ -101,3 +103,4 @@
     Пользователь должен увидеть перевод всех наиболее важных кнопок на руский язык а также описание товара # если оно имеется
   actual-result: >
      1. Описание товара не перевелось на русский язык    
+
