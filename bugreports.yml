@@ -1,85 +1,85 @@
 ---
 - summary: |
     Нет возможности зарегестрировать свой профиль
-  environment: |
+environment: |
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Перейти по ссылке https://hexlet-products-store.vercel.app/
     2. В графе регистрации учетной записи нажать на кномку "регистрация"
     3. Создать учетную запись.
-  expected-result: |
+expected-result: |
     Переход на страницу регистрации и создания учетной записи
-  actual-result: |
+actual-result: |
     Перейдя по ссылке, нет графы регистрации.
        
 - summary: |
     Не работает каталог товара в магазине
-  environment: |
+environment: |
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Перейти по ссылке https://hexlet-products-store.vercel.app/
     2. Нажать на кнопку "Category"
     3. Выбрать категорию "Laptop"
     4. Выбрать бренд "Apple"
-  expected-result: |
+expected-result: |
     Переходя по ссылке, нажимаем на кнопку "Category","Laptop","Apple", на главном экране будет выведен результат фильтрации магазина.
-  actual-result: |
+actual-result: |
      получаем на главном экране "Nothing found!"
      
 - summary: |
     Нет кнопки оплаты товара в корзине
-  environment: |
+environment: |
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Перейти по ссылке https://hexlet-products-store.vercel.app/
     2. Добавить товар в корзину
     3. Перейти в корзину нажав на кнопку "Cart"
-  expected-result: |
+expected-result: |
     После добавления товара, переходим в корзину, нажимаем на кнопку "Оплатить"
-  actual-result: |
+actual-result: |
     Перейдя в корзину, нет кнопки "Оплатить"
 
 - summary: |
     Нажимая на товар, фото товара нельзя пролистать кликая на него.
-  environment: |
+environment: |
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Перейти по ссылке https://hexlet-products-store.vercel.app/
     2. Кликнуть на товар
     3. Представлены разные фото товара
-  expected-result: >
+expected-result: >
     Кликая на товар, представлены разные фото товара, кликая на них
     они должны перелистываться
-  actual-result: |
+actual-result: |
     кликая на товар , ничего не происходит, картинки не листаются
       
 - summary: |
     Не работает поиск по цвету и размеру.
-  environment: >
+environment: >
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     Зайти на страницу логина https://hexlet-products-store.vercel.app
-  expected-result: |
+expected-result: |
     На странице должен отображаться поиск товаров цвету и размеру.
-  actual-result: |
+actual-result: |
     Поиск по цвету и размеру на странице отсутсвует.
     
 - summary: |
     Не работает проверка смены языков.
-  environment: >
+environment: >
     Google Chrome Версия 109.0.5414.74 (Официальная сборка), (32 бит)
     ОС Windows 11 Pro Весрия 22H2
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Нажать в шапке меню Accordeon "Language"
     2. Выбрать "Russian"
     3. Перейти на главную страницу и выбрать любой товар
     4. Перейти в корзину  
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть перевод всех наиболее важных кнопок на руский язык а также описание товара # если оно имеется
-  actual-result: >
+actual-result: >
      1. Описание товара не перевелось на русский язык 
