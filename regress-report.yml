@@ -44,3 +44,8 @@ test-cases:
     Сайт должен иметь мобильную версию
   status: pass
   
+- summary: |
+    Проверка работоспособности на разных браузерах
+  status: pass  
+  
+bugreports: []  
