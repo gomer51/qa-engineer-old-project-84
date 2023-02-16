@@ -43,3 +43,4 @@ test-cases:
 - summary: |
     Сайт должен иметь мобильную версию
   status: pass
+  
